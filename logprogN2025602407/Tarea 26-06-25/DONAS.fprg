@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Donas"/>
+        <attribute name="authors" value="manta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-25 10:21:22 p. m."/>
+        <attribute name="created" value="bWFudGE7REVTS1RPUC1TQ0tIN05FOzIwMjUtMDMtMjQ7MDg6MzA6NTYgcC4gbS47MzA4Mw=="/>
+        <attribute name="edited" value="bWFudGE7REVTS1RPUC1TQ0tIN05FOzIwMjUtMDMtMjQ7MDk6NDI6NDIgcC4gbS47MTszMTkw"/>
+        <attribute name="edited" value="VmFsZG87REVTS1RPUC03NTJMTkROOzIwMjUtMDMtMjU7MTA6MjE6MjIgcC4gbS47MTszMTEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="DONA, Cant" type="Integer" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="Cant"/>
+            <if expression="Cant &lt;30">
+                <then>
+                    <assign variable="DONA" expression="10"/>
+                    <assign variable="Total" expression="Cant * DONA"/>
+                    <output expression="Total" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="Cant &gt; 29">
+                <then>
+                    <assign variable="DONA" expression="10-1"/>
+                    <assign variable="Total" expression="(DONA*Cant)"/>
+                    <output expression="Total" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="Cant &gt; 50">
+                <then>
+                    <assign variable="DONA" expression="10 - 2"/>
+                    <assign variable="Total" expression="DONA * Cant"/>
+                    <output expression="Total" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
