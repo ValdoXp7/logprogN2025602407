@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Costo"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-30 11:22:52 p.m."/>
+        <attribute name="created" value="VVNFUjtNQU5UQUdHLVBDOzIwMjUtMDMtMjk7MDc6NTU6MjYgcC4gbS47MjUwMg=="/>
+        <attribute name="edited" value="VVNFUjtNQU5UQUdHLVBDOzIwMjUtMDMtMjk7MDg6MDY6NDkgcC4gbS47MTsyNjEy"/>
+        <attribute name="edited" value="cGMxO1JJS1k7MjAyNS0wMy0zMDsxMToyMjo1MiBwLm0uOzE7MjExNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingrese su edad&quot;" newline="True"/>
+            <input variable="Edad"/>
+            <if expression="Edad &lt; 4 AND Edad &gt;=0">
+                <then>
+                    <output expression="&quot;Gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Edad &gt;= 4  AND Edad &lt;= 18">
+                        <then>
+                            <output expression="&quot;$200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Edad &gt; 18 AND Edad &lt; 110">
+                                <then>
+                                    <output expression="&quot;$500&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Ilogico&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
