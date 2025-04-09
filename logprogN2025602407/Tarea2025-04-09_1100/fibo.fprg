@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonacci"/>
+        <attribute name="authors" value="marco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 10:37:52 p. m."/>
+        <attribute name="created" value="bWFyY287QllST05MRUM7MjAyNS0wNC0wODswODozMzoyMSBwLiBtLjsyNjA2"/>
+        <attribute name="edited" value="bWFyY287QllST05MRUM7MjAyNS0wNC0wODsxMDowODoxMCBwLiBtLjsyOzI3MDg="/>
+        <attribute name="edited" value="VmFsZG87REVTS1RPUC03NTJMTkROOzIwMjUtMDQtMDg7MTA6Mzc6NTIgcC4gbS47MTszMTIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Ingrese un numero para determinar su longitud&quot;" newline="True"/>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <declare name="n2" type="Integer" array="False" size=""/>
+            <declare name="n3" type="Integer" array="False" size=""/>
+            <declare name="lim" type="Integer" array="False" size=""/>
+            <declare name="fibonacci" type="Integer" array="False" size=""/>
+            <assign variable="n1" expression="1"/>
+            <assign variable="n2" expression="2"/>
+            <assign variable="n3" expression="2"/>
+            <input variable="lim"/>
+            <for variable="fibonacci" start="1" end="lim" direction="inc" step="1">
+                <assign variable="n3" expression="n1+n2"/>
+                <assign variable="n1" expression="n2"/>
+                <assign variable="n2" expression="n3"/>
+                <output expression="n3" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
